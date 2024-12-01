@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Study Guide Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius="small"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="flex h-screen">
+        <aside class="w-64 bg-white border-r border-gray-200 flex flex-col">
+            <div class="p-4 border-b border-gray-200">
+                <img src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo" class="h-8"/>
+            </div>
+            <div class="p-4">
+                <h2 class="text-sm font-semibold text-gray-500 mb-3">Filters</h2>
+                <div class="space-y-2">
+                    <button class="w-full text-left px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 !rounded-button">
+                        <i class="fas fa-layer-group mr-2"></i>All
+                    </button>
+                    <button class="w-full text-left px-3 py-2 rounded-lg bg-green-50 text-green-700 !rounded-button">
+                        <i class="fas fa-flask mr-2"></i>Chemistry
+                    </button>
+                    <button class="w-full text-left px-3 py-2 rounded-lg bg-blue-50 text-blue-700 !rounded-button">
+                        <i class="fas fa-calculator mr-2"></i>Math
+                    </button>
+                </div>
+                <h2 class="text-sm font-semibold text-gray-500 mt-6 mb-3">Sorts</h2>
+                <div class="space-y-2">
+                    <button class="w-full text-left px-3 py-2 rounded-lg bg-yellow-50 text-yellow-700 !rounded-button">
+                        <i class="fas fa-clock mr-2"></i>Latest
+                    </button>
+                    <button class="w-full text-left px-3 py-2 rounded-lg text-gray-700 hover:bg-gray-100 !rounded-button">
+                        <i class="fas fa-sort-alpha-down mr-2"></i>A-Z
+                    </button>
+                </div>
+                <h2 class="text-sm font-semibold text-gray-500 mt-6 mb-3">My Study Guides</h2>
+                <div class="space-y-2">
+                    <div class="p-3 bg-white border border-gray-200 rounded-lg">
+                        <div class="flex items-center">
+                            <span class="w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-600 rounded-lg">
+                                <i class="fas fa-calculator"></i>
+                            </span>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-medium">Calculus I</h3>
+                                <p class="text-xs text-gray-500">2h ago</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 bg-white border border-gray-200 rounded-lg">
+                        <div class="flex items-center">
+                            <span class="w-8 h-8 flex items-center justify-center bg-green-100 text-green-600 rounded-lg">
+                                <i class="fas fa-flask"></i>
+                            </span>
+                            <div class="ml-3">
+                                <h3 class="text-sm font-medium">Organic Chemistry</h3>
+                                <p class="text-xs text-gray-500">1d ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="flex-1 overflow-auto">
+            <header class="bg-white border-b border-gray-200">
+                <div class="flex items-center justify-end px-6 h-16">
+                    <div class="flex items-center">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A professional headshot of a person with a friendly smile, wearing business casual attire, against a neutral background&width=40&height=40&orientation=squarish&flag=f25c9b86-10cd-4fe5-8456-06ed910c4d15&flag=49040993-532d-4a25-8884-785d422e9410" alt="Profile" class="w-8 h-8 rounded-full"/>
+                        <span class="ml-2 text-sm font-medium text-gray-700">John Smith</span>
+                    </div>
+                </div>
+            </header>
+            <div class="max-w-4xl mx-auto py-8 px-4">
+                <div class="bg-white border border-gray-200 rounded-lg p-6 mb-6">
+                    <div class="text-center">
+                        <button class="bg-custom text-white px-4 py-2 rounded-lg inline-flex items-center !rounded-button">
+                            <i class="fas fa-cloud-upload-alt mr-2"></i>
+                            Upload Study Guide
+                        </button>
+                        <p class="text-sm text-gray-500 mt-2">Supported formats: PDF, DOCX, TXT</p>
+                    </div>
+                </div>
+                <div class="bg-white border border-gray-200 rounded-lg p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h1 class="text-xl font-semibold">Calculus I - Derivatives and Integrals</h1>
+                        <span class="text-sm font-medium text-gray-500">Score: 8/10</span>
+                    </div>
+                    <div class="flex items-center p-3 bg-gray-50 rounded-lg mb-6">
+                        <i class="fas fa-file-pdf text-red-500 mr-2"></i>
+                        <span class="text-sm text-gray-700">calculus_practice.pdf</span>
+                        <button class="ml-auto text-gray-400 hover:text-gray-600 !rounded-button">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <h2 class="text-lg font-medium mb-4">Question</h2>
+                            <p class="text-gray-700">What is the derivative of f(x) = x² with respect to x?</p>
+                        </div>
+                        <div class="space-y-3">
+                            <label class="flex items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="answer" class="text-custom"/>
+                                <span class="ml-3">2x</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="answer" class="text-custom"/>
+                                <span class="ml-3">x²</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="answer" class="text-custom"/>
+                                <span class="ml-3">2</span>
+                            </label>
+                            <label class="flex items-center p-4 border border-gray-200 rounded-lg cursor-pointer hover:bg-gray-50">
+                                <input type="radio" name="answer" class="text-custom"/>
+                                <span class="ml-3">x</span>
+                            </label>
+                        </div>
+                        <div class="flex items-center justify-between mt-6">
+                            <button class="text-gray-500 hover:text-gray-700 !rounded-button">
+                                <i class="fas fa-step-forward mr-2"></i>Skip
+                            </button>
+                            <div class="space-x-3"><button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 !rounded-button mr-3"><i class="fas fa-chevron-left mr-2"></i>Previous</button>
+                                
+                                <button class="px-4 py-2 bg-red-100 text-red-700 rounded-lg hover:bg-red-200 !rounded-button">
+                                    <i class="fas fa-thumbs-down mr-2"></i>Bad
+                                </button>
+                            <button class="px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 !rounded-button ml-3"><i class="fas fa-chevron-right mr-2"></i>Next</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
